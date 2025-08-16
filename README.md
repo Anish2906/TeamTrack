@@ -1,185 +1,80 @@
-
 🚀 Employee Management System (EMS)
-
-A React app bootstrapped with Vite and styled using Tailwind CSS. EMS showcases role‑based authentication (Admin & Employee), task assignment & tracking, and a lightweight Local Storage data layer.
+A React project using Vite and Tailwind CSS. This project demonstrates my front-end development skills with authentication, task management, and local storage as the backend.
 
 🌟 Features
-
 🔑 Authentication
 
-Separate login flows for Admin and Employee.
-
-Simple credential check stored in Local Storage (demo‑only).
-
+Separate logins for Admin and Employee.
 📝 Task Management
 
-Admin: Create tasks, set priority, due date, and track progress.
-
-Employee: Accept, reject, or update status (In Progress, Completed).
-
+Admin: Assign tasks, add details, and track progress.
+Employee: Accept, reject, or mark tasks as "In Progress" or "Completed".
 ⚙️ Local Storage Backend
 
-Uses browser localStorage for persistence (no external DB).
-
-Seed data for quick start; add more users any time.
-
-💎 UI/UX
-
-Responsive, mobile‑first layout.
-
-Clean, utility‑first styling with Tailwind.
-
+Uses browser local storage for persistent data management.
 🛠️ Tech Stack
-
-React — Component‑based UI.
-
-Vite — Fast dev server & builds.
-
-Tailwind CSS — Utility‑first styling.
-
-JavaScript (ES6+) — App logic.
-
-Local Storage — Data persistence.
-
-📦 Project Structure (example)
-
-ems/
-├─ src/
-│  ├─ components/
-│  │  ├─ Auth/
-│  │  ├─ Tasks/
-│  │  └─ UI/
-│  ├─ pages/
-│  ├─ hooks/
-│  ├─ utils/
-│  ├─ data/             
-│  ├─ App.jsx
-│  └─ main.jsx
-├─ public/
-├─ index.html
-├─ tailwind.config.js
-├─ postcss.config.js
-├─ package.json
-└─ README.md
-
-🔐 Demo Credentials
-
-Quick start with pre‑seeded users. You can add more employees with unique usernames.
-
-Admin
+React - Building the user interface.
+Vite - Fast development setup and build tool.
+Tailwind CSS - Minimalistic, utility-first styling.
+JavaScript - For handling business logic.
+Local Storage - For data persistence.
+📋 Credentials
+Admin Login
 
 Username: admin@me.com
-
 Password: 123
-
-Employee (example)
+Employee Example
 
 Username: employee2@example.com
-
 Password: 123
+💡 Note: You can add more employees with unique usernames.
 
 ⚙️ Installation & Setup
+Clone the Repository
 
-Clone the repository
-
-git clone 
+git clone https://github.com/ritzraj-23/ems.git
 cd ems
-
-Install dependencies
+Install Dependencies
 
 npm install
-
-Run the dev server
+Run the Project
 
 npm run dev
-
-Open http://localhost:5173 in your browser.
-
-🚪 Usage at a Glance
-
-Login as Admin to create/assign tasks.
-
-Switch to an Employee account to accept/reject and update task status.
-
-All data (users, tasks, session) is stored in localStorage.
-
-🧱 Data Model (Local Storage)
-
-Keys may vary by implementation, but a typical shape looks like this:
-
-{
-  "ems_users": [
-    { "id": "u1", "role": "admin", "email": "admin@me.com", "password": "123" },
-    { "id": "u2", "role": "employee", "email": "employee2@example.com", "password": "123" }
-  ],
-  "ems_tasks": [
-    {
-      "id": "t1",
-      "title": "Create landing page",
-      "details": "Hero + CTA + responsive nav",
-      "priority": "high",
-      "dueDate": "2025-08-31",
-      "assigneeId": "u2",
-      "status": "assigned" // assigned | accepted | in-progress | completed | rejected
-    }
-  ],
-  "ems_session": { "userId": "u1" }
-}
-
-🧪 Available Scripts
-
-npm run dev — Start development server.
-
-npm run build — Production build.
-
-npm run preview — Preview built app.
-
-🔧 Configuration
-
-Tailwind is preconfigured via tailwind.config.js and postcss.config.js.
-
-Add environment‑specific values (if needed) via Vite env files: .env, .env.development, etc.
-
-Since EMS uses Local Storage, no secrets are required for the demo.
-
-🔒 Security Note
-
-This project is for demonstration. Local Storage credentials are not secure. For production:
-
-Replace Local Storage with a real backend (API + DB).
-
-Hash passwords, use proper auth (JWT/OAuth), and role/permission checks on the server.
-
-Add input validation & rate limiting.
-
-🗺️ Roadmap (Nice‑to‑Have)
-
-Drag‑and‑drop task board (Kanban).
-
-Filters & search (status, assignee, due date).
-
-Comments & attachments on tasks.
-
-Notifications/toasts.
-
-Persistence via IndexedDB or real API.
-
-🤝 Contributing
-
-Contributions are welcome! Feel free to open an issue or submit a PR.
-
-📄 License
-
-This project is open‑sourced under the MIT License (see LICENSE).
+Open your browser and go to http://localhost:5173 to see the app in action.
 
 🎯 Goal
+EMS is a simple application to showcase my ability to:
 
-EMS demonstrates my ability to:
-
-Build responsive, functional front‑end apps.
-
-Implement simple role‑based access (Admin & Employee).
-
-Manage and track tasks using a Local Storage data layer.
-
+Build responsive, functional front-end applications.
+Implement authentication and role-based access (Admin and Employee).
+Manage tasks and track progress using local storage.
 Enjoy using EMS! 🚀
+
+About
+Emplyo : A task management system designed for admins and employees, enabling task creation, monitoring, and status updates with a streamlined login process.
+
+ritzraj-23.github.io/Emplyo/
+Resources
+ Readme
+ Activity
+Stars
+ 0 stars
+Watchers
+ 1 watching
+Forks
+ 0 forks
+Report repository
+Deployments
+2
+ github-pages 4 months ago
+Languages
+JavaScript
+95.3%
+ 
+CSS
+3.4%
+ 
+HTML
+1.3%
+Footer
+
