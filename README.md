@@ -39,7 +39,7 @@ A **React** project using **Vite** and **Tailwind CSS**. This project demonstrat
 
 1. **Clone the Repository**  
    ```bash
-   git clone https://github.com/ritzraj-23/ems.git
+   git clone https://github.com/Anish2906/TeamTrack.git
    cd ems
    ```
 
